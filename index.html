@@ -1,1 +1,83 @@
-....
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Özgeçmiş ve Makaleler</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #ADD8E6; /* açık mavi */
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #f0f0f0;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: black;
+        }
+        nav a:hover {
+            color: #ADD8E6; /* açık mavi */
+        }
+        footer {
+            background-color: #ADD8E6; /* açık mavi */
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .content {
+            margin-top: 20px;
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Hoş Geldiniz!</h1>
+        <p>Burada özgeçmişimi ve makalelerimi bulabilirsiniz.</p>
+    </header>
+    <nav>
+        <a href="#cv">CV</a>
+        <a href="#articles">Makaleler</a>
+    </nav>
+    <div class="container" id="cv">
+        <h2>Özgeçmiş</h2>
+        <!-- CV içeriği buraya gelecek -->
+        <p>Özgeçmişinizi buraya ekleyebilirsiniz.</p>
+    </div>
+    <div class="container" id="articles">
+        <h2>Makaleler</h2>
+        <!-- Makalelerin listesi buraya gelecek -->
+        <div class="content">
+            <h3>Makale Başlığı 1</h3>
+            <p>Makale içeriği buraya gelecek.</p>
+        </div>
+        <div class="content">
+            <h3>Makale Başlığı 2</h3>
+            <p>Makale içeriği buraya gelecek.</p>
+        </div>
+        <!-- İhtiyacınıza göre daha fazla makale ekleyebilirsiniz -->
+    </div>
+    <footer>
+        <p>Telif Hakkı © 2024 - Özgeçmiş ve Makaleler</p>
+    </footer>
+</body>
+</html>
