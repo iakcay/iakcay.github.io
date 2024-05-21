@@ -6,46 +6,106 @@
     <title>İbrahim AKÇAY - DevOps Uzmanı</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            color: #333;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
+            background-color: #f8f9fa;
+            color: #343a40;
         }
         .container {
             width: 80%;
             margin: 0 auto;
         }
         header {
-            background-color: #0073e6;
+            background-color: #343a40;
             color: #fff;
-            padding: 10px 0;
+            padding: 20px 0;
             text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        header p {
+            margin: 10px 0 0;
+            font-size: 1.2em;
         }
         nav {
             display: flex;
             justify-content: center;
-            background-color: #333;
+            background-color: #495057;
         }
         nav a {
             color: #fff;
             padding: 14px 20px;
             text-decoration: none;
             text-align: center;
+            transition: background-color 0.3s ease;
         }
         nav a:hover {
-            background-color: #575757;
+            background-color: #6c757d;
         }
         section {
-            padding: 20px;
+            padding: 40px 0;
+            border-bottom: 1px solid #dee2e6;
+        }
+        section h2 {
+            text-align: center;
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+        section p {
+            text-align: center;
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+        .projects ul, .resume ul, .blog ul {
+            list-style: none;
+            padding: 0;
+        }
+        .projects ul li, .resume ul li, .blog ul li {
+            padding: 10px;
             background-color: #fff;
-            margin-bottom: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .projects ul li:hover, .resume ul li:hover, .blog ul li:hover {
+            box-shadow: 0 0 15px rgba(0,0,0,0.2);
         }
         footer {
             text-align: center;
-            padding: 10px 0;
-            background-color: #0073e6;
+            padding: 20px 0;
+            background-color: #343a40;
             color: #fff;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        form label {
+            font-size: 1.1em;
+            margin: 10px 0 5px;
+        }
+        form input, form textarea {
+            width: 80%;
+            padding: 10px;
+            margin: 5px 0 15px;
+            border: 1px solid #ced4da;
+            border-radius: 5px;
+        }
+        form input[type="submit"] {
+            width: auto;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        form input[type="submit"]:hover {
+            background-color: #0056b3;
         }
     </style>
 </head>
@@ -60,4 +120,59 @@
         <a href="#projects">Projeler</a>
         <a href="#blog">Blog</a>
         <a href="#contact">İletişim</a>
-   
+    </nav>
+    <div class="container">
+        <section id="home">
+            <h2>Hoşgeldiniz!</h2>
+            <p>Ben İbrahim AKÇAY, DevOps uzmanıyım. Bilgisayar mühendisliği üzerine yüksek lisans yaptım. Bu web sayfasında, kariyerim, projelerim ve blog yazılarım hakkında bilgi bulabilirsiniz.</p>
+        </section>
+        <section id="resume" class="resume">
+            <h2>Özgeçmiş</h2>
+            <h3>Eğitim</h3>
+            <ul>
+                <li>Bilgisayar Mühendisliği, [Üniversite Adı]</li>
+                <li>Yüksek Lisans, [Üniversite Adı]</li>
+            </ul>
+            <h3>İş Deneyimi</h3>
+            <ul>
+                <li>DevOps Uzmanı, [Şirket Adı]</li>
+                <li>Sistem Mühendisi, [Şirket Adı]</li>
+            </ul>
+        </section>
+        <section id="projects" class="projects">
+            <h2>Projeler</h2>
+            <p>Üzerinde çalıştığım veya tamamladığım projeler:</p>
+            <ul>
+                <li>Proje 1: [Proje Açıklaması]</li>
+                <li>Proje 2: [Proje Açıklaması]</li>
+                <li>Proje 3: [Proje Açıklaması]</li>
+            </ul>
+        </section>
+        <section id="blog" class="blog">
+            <h2>Blog</h2>
+            <p>Blog yazılarım:</p>
+            <ul>
+                <li><a href="#">Blog Yazısı 1</a></li>
+                <li><a href="#">Blog Yazısı 2</a></li>
+                <li><a href="#">Blog Yazısı 3</a></li>
+            </ul>
+        </section>
+        <section id="contact" class="contact">
+            <h2>İletişim</h2>
+            <p>Bana ulaşmak için aşağıdaki formu doldurabilirsiniz:</p>
+            <form>
+                <label for="name">Adınız:</label><br>
+                <input type="text" id="name" name="name"><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email"><br>
+                <label for="message">Mesajınız:</label><br>
+                <textarea id="message" name="message"></textarea><br>
+                <input type="submit" value="Gönder">
+            </form>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2024 İbrahim AKÇAY. Tüm hakları saklıdır.</p>
+    </footer>
+</body>
+</html>
