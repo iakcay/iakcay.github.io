@@ -34,4 +34,113 @@
         nav {
             display: flex;
             flex-wrap: wrap;
-            justify-content
+            justify-content: center;
+            background-color: #495057;
+        }
+        nav a {
+            color: #fff;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+            transition: background-color 0.3s ease;
+            flex: 1;
+            min-width: 100px;
+        }
+        nav a:hover {
+            background-color: #6c757d;
+        }
+        section {
+            padding: 40px 0;
+            border-bottom: 1px solid #dee2e6;
+        }
+        section h2 {
+            text-align: center;
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+        .blog-posts {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .blog-post {
+            width: 30%;
+            background-color: #fff;
+            margin: 10px;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            transition: box-shadow 0.3s ease;
+        }
+        .blog-post:hover {
+            box-shadow: 0 0 15px rgba(0,0,0,0.2);
+        }
+        .blog-post img {
+            max-width: 100%;
+            border-radius: 5px;
+        }
+        .blog-post h3 {
+            margin: 15px 0 10px;
+        }
+        .blog-post p {
+            margin: 0 0 10px;
+        }
+        .blog-post a {
+            color: #007bff;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        .blog-post a:hover {
+            color: #0056b3;
+        }
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #343a40;
+            color: #fff;
+        }
+
+        @media (max-width: 768px) {
+            .blog-post {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>İbrahim AKÇAY</h1>
+        <p>Blog</p>
+    </header>
+    <nav>
+        <a href="index.html">Anasayfa</a>
+        <a href="blog.html">Blog</a>
+        <a href="#contact">İletişim</a>
+    </nav>
+    <div class="container">
+        <section class="blog">
+            <h2>Blog Yazılarım</h2>
+            <div class="blog-posts">
+                <div class="blog-post">
+                    <img src="images/blog1.jpg" alt="Blog Yazısı 1">
+                    <h3>Blog Yazısı 1</h3>
+                    <p>Kısa açıklama... <a href="blog-post1.html">Devamını Oku</a></p>
+                </div>
+                <div class="blog-post">
+                    <img src="images/blog2.jpg" alt="Blog Yazısı 2">
+                    <h3>Blog Yazısı 2</h3>
+                    <p>Kısa açıklama... <a href="blog-post2.html">Devamını Oku</a></p>
+                </div>
+                <div class="blog-post">
+                    <img src="images/blog3.jpg" alt="Blog Yazısı 3">
+                    <h3>Blog Yazısı 3</h3>
+                    <p>Kısa açıklama... <a href="blog-post3.html">Devamını Oku</a></p>
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2024 İbrahim AKÇAY. Tüm hakları saklıdır.</p>
+    </footer>
+</body>
+</html>
