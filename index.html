@@ -13,7 +13,8 @@
             color: #343a40;
         }
         .container {
-            width: 80%;
+            width: 90%;
+            max-width: 1200px;
             margin: 0 auto;
         }
         header {
@@ -32,6 +33,7 @@
         }
         nav {
             display: flex;
+            flex-wrap: wrap;
             justify-content: center;
             background-color: #495057;
         }
@@ -41,6 +43,8 @@
             text-decoration: none;
             text-align: center;
             transition: background-color 0.3s ease;
+            flex: 1;
+            min-width: 100px;
         }
         nav a:hover {
             background-color: #6c757d;
@@ -98,7 +102,8 @@
             margin: 10px 0 5px;
         }
         form input, form textarea {
-            width: 80%;
+            width: 90%;
+            max-width: 500px;
             padding: 10px;
             margin: 5px 0 15px;
             border: 1px solid #ced4da;
@@ -115,6 +120,32 @@
         }
         form input[type="submit"]:hover {
             background-color: #0056b3;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2em;
+            }
+            header p {
+                font-size: 1em;
+            }
+            section {
+                padding: 20px 0;
+            }
+            section h2 {
+                font-size: 1.5em;
+            }
+            section p {
+                font-size: 1em;
+            }
+            .profile-pic {
+                width: 120px;
+                height: 120px;
+            }
+            nav a {
+                padding: 10px 15px;
+                font-size: 0.9em;
+            }
         }
     </style>
 </head>
