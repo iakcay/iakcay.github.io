@@ -1,210 +1,84 @@
 <!DOCTYPE html>
 <html lang="tr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>İbrahim AKÇAY - DevOps Uzmanı</title>
-    <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f8f9fa;
-            color: #343a40;
-        }
-        .container {
-            width: 90%;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-        header {
-            background-color: #343a40;
-            color: #fff;
-            padding: 20px 0;
-            text-align: center;
-        }
-        header h1 {
-            margin: 0;
-            font-size: 2.5em;
-        }
-        header p {
-            margin: 10px 0 0;
-            font-size: 1.2em;
-        }
-        nav {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            background-color: #495057;
-        }
-        nav a {
-            color: #fff;
-            padding: 14px 20px;
-            text-decoration: none;
-            text-align: center;
-            transition: background-color 0.3s ease;
-            flex: 1;
-            min-width: 100px;
-        }
-        nav a:hover {
-            background-color: #6c757d;
-        }
-        section {
-            padding: 40px 0;
-            border-bottom: 1px solid #dee2e6;
-        }
-        section h2 {
-            text-align: center;
-            font-size: 2em;
-            margin-bottom: 20px;
-        }
-        section p {
-            text-align: center;
-            font-size: 1.2em;
-            margin-bottom: 20px;
-        }
-        .projects ul, .resume ul, .blog ul {
-            list-style: none;
-            padding: 0;
-        }
-        .projects ul li, .resume ul li, .blog ul li {
-            padding: 10px;
-            background-color: #fff;
-            margin: 10px 0;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-        .projects ul li:hover, .resume ul li:hover, .blog ul li:hover {
-            box-shadow: 0 0 15px rgba(0,0,0,0.2);
-        }
-        .profile-pic {
-            display: block;
-            margin: 0 auto 20px;
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            object-fit: cover;
-            border: 2px solid #343a40;
-        }
-        footer {
-            text-align: center;
-            padding: 20px 0;
-            background-color: #343a40;
-            color: #fff;
-        }
-        form {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        form label {
-            font-size: 1.1em;
-            margin: 10px 0 5px;
-        }
-        form input, form textarea {
-            width: 90%;
-            max-width: 500px;
-            padding: 10px;
-            margin: 5px 0 15px;
-            border: 1px solid #ced4da;
-            border-radius: 5px;
-        }
-        form input[type="submit"] {
-            width: auto;
-            padding: 10px 20px;
-            background-color: #007bff;
-            color: #fff;
-            border: none;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-        }
-        form input[type="submit"]:hover {
-            background-color: #0056b3;
-        }
-
-        @media (max-width: 768px) {
-            header h1 {
-                font-size: 2em;
-            }
-            header p {
-                font-size: 1em;
-            }
-            section {
-                padding: 20px 0;
-            }
-            section h2 {
-                font-size: 1.5em;
-            }
-            section p {
-                font-size: 1em;
-            }
-            .profile-pic {
-                width: 120px;
-                height: 120px;
-            }
-            nav a {
-                padding: 10px 15px;
-                font-size: 0.9em;
-            }
-        }
-    </style>
+    <title>İbrahim AKÇAY - DevOps & Linux Uzmanı</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
+
 <body>
-    <header>
-        <h1>İbrahim AKÇAY</h1>
-        <p>DevOps Uzmanı</p>
-    </header>
-    <nav>
-        <a href="#home">Anasayfa</a>
-        <a href="#resume">Özgeçmiş</a>
-        <a href="#projects">Projeler</a>
-        <a href="blog.html">Blog</a>
-        <a href="#contact">İletişim</a>
-    </nav>
-    <div class="container">
-        <section id="home">
-            <img src="resim.jpg" alt="İbrahim AKÇAY" class="profile-pic">
-            <h2>Hoşgeldiniz!</h2>
-            <p>Ben İbrahim AKÇAY, DevOps uzmanıyım. Bilgisayar mühendisliği üzerine yüksek lisans yaptım. Bu web sayfasında, kariyerim, projelerim ve blog yazılarım hakkında bilgi bulabilirsiniz.</p>
-        </section>
-        <section id="resume" class="resume">
-            <h2>Özgeçmiş</h2>
-            <h3>Eğitim</h3>
-            <ul>
-                <li>Bilgisayar Mühendisliği, [Üniversite Adı]</li>
-                <li>Yüksek Lisans, [Üniversite Adı]</li>
-            </ul>
-            <h3>İş Deneyimi</h3>
-            <ul>
-                <li>DevOps Uzmanı, [Şirket Adı]</li>
-                <li>Sistem Mühendisi, [Şirket Adı]</li>
-            </ul>
-        </section>
-        <section id="projects" class="projects">
-            <h2>Projeler</h2>
-            <p>Üzerinde çalıştığım veya tamamladığım projeler:</p>
-            <ul>
-                <li>Proje 1: [Proje Açıklaması]</li>
-                <li>Proje 2: [Proje Açıklaması]</li>
-                <li>Proje 3: [Proje Açıklaması]</li>
-            </ul>
-        </section>
-        <section id="contact" class="contact">
-            <h2>İletişim</h2>
-            <p>Bana ulaşmak için aşağıdaki formu doldurabilirsiniz:</p>
-            <form>
-                <label for="name">Adınız:</label><br>
-                <input type="text" id="name" name="name"><br>
-                <label for="email">Email:</label><br>
-                <input type="email" id="email" name="email"><br>
-                <label for="message">Mesajınız:</label><br>
-                <textarea id="message" name="message"></textarea><br>
-                <input type="submit" value="Gönder">
-            </form>
-        </section>
+    <div class="cv-container">
+        <!-- Sidebar Section -->
+        <aside class="sidebar">
+            <div class="profile">
+                <!-- Profile Image -->
+                <img src="" alt="Profile Picture" class="profile-pic" id="profile-pic">
+
+                <!-- Name and Title -->
+                <h1 class="name" id="name"></h1>
+                <p class="title" id="title"></p>
+            </div>
+
+            <div class="sidebar-section">
+                <h3><i class="fas fa-envelope"></i> İletişim</h3>
+                <ul class="contact-list" id="contact-list">
+                    <!-- Dynamic Content -->
+                </ul>
+            </div>
+
+            <div class="sidebar-section">
+                <h3><i class="fas fa-graduation-cap"></i> Eğitim</h3>
+                <div id="education-list">
+                    <!-- Dynamic Content -->
+                </div>
+            </div>
+
+            <div class="sidebar-section">
+                <h3><i class="fas fa-code"></i> Yetenekler</h3>
+                <div class="skills-list" id="skills-list">
+                    <!-- Dynamic Content -->
+                </div>
+            </div>
+
+            <div class="sidebar-section">
+                <h3><i class="fas fa-language"></i> Diller</h3>
+                <ul class="language-list" id="languages-list">
+                    <!-- Dynamic Content -->
+                </ul>
+            </div>
+        </aside>
+
+        <!-- Main Content Section -->
+        <main class="main-content">
+            <section class="summary">
+                <h2 class="section-title">Hakkımda</h2>
+                <p id="summary-text">
+                    <!-- Dynamic Content -->
+                </p>
+            </section>
+
+            <section class="experience">
+                <h2 class="section-title">İş Deneyimi</h2>
+                <div id="experience-list">
+                    <!-- Dynamic Content -->
+                </div>
+            </section>
+
+            <section class="projects">
+                <h2 class="section-title">Projeler</h2>
+                <div id="projects-list">
+                    <!-- Dynamic Content -->
+                </div>
+            </section>
+        </main>
     </div>
-    <footer>
-        <p>&copy; 2024 İbrahim AKÇAY. Tüm hakları saklıdır.</p>
-    </footer>
+
+    <!-- Data & Logic -->
+    <script src="cv-data.js"></script>
+    <script src="app.js"></script>
 </body>
+
 </html>

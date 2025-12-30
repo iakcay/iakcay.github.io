@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+:root {
+    --sidebar-bg: #1e293b;
+    --sidebar-text: #f1f5f9;
+    --main-bg: #ffffff;
+    --primary-color: #334155;
+    --accent-color: #3b82f6;
+    /* Blue accent */
+    --text-color: #334155;
+    --light-text: #64748b;
+    --border-color: #e2e8f0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #e2e8f0;
+    /* Outer background */
+    color: var(--text-color);
+    line-height: 1.6;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.cv-container {
+    display: grid;
+    grid-template-columns: 320px 1fr;
+    max-width: 1000px;
+    width: 100%;
+    background-color: var(--main-bg);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    margin: 40px 0;
+}
+
+/* Sidebar Styles */
+.sidebar {
+    background-color: var(--sidebar-bg);
+    color: var(--sidebar-text);
+    padding: 2rem;
+}
+
+.profile {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid var(--accent-color);
+    margin-bottom: 1rem;
+}
+
+.name {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 0.25rem;
+}
+
+.title {
+    font-size: 1rem;
+    color: #94a3b8;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.sidebar-section {
+    margin-bottom: 2.5rem;
+}
+
+.sidebar-section h3 {
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    border-bottom: 2px solid var(--accent-color);
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.contact-list,
+.language-list {
+    list-style: none;
+}
+
+.contact-list li,
+.language-list li {
+    margin-bottom: 0.75rem;
+    font-size: 0.9rem;
+}
+
+.contact-list a {
+    color: var(--sidebar-text);
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.contact-list a:hover {
+    color: var(--accent-color);
+}
+
+.education-item {
+    margin-bottom: 1.5rem;
+}
+
+.education-item .degree {
+    font-weight: 700;
+    font-size: 0.95rem;
+}
+
+.education-item .school {
+    font-size: 0.9rem;
+    color: #cbd5e1;
+}
+
+.education-item .year {
+    font-size: 0.85rem;
+    color: #94a3b8;
+}
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.skills-list span {
+    background-color: #334155;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    font-size: 0.85rem;
+}
+
+/* Main Content Styles */
+.main-content {
+    padding: 3rem;
+}
+
+.section-title {
+    font-size: 1.75rem;
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+    border-bottom: 2px solid var(--border-color);
+    padding-bottom: 0.5rem;
+}
+
+.summary {
+    margin-bottom: 3rem;
+}
+
+.summary p {
+    color: var(--text-color);
+    font-size: 1rem;
+}
+
+.job-item {
+    margin-bottom: 2rem;
+}
+
+.job-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: basin;
+    margin-bottom: 0.25rem;
+}
+
+.job-header h3 {
+    font-size: 1.25rem;
+    color: var(--primary-color);
+}
+
+.job-header .date {
+    font-weight: 500;
+    color: var(--accent-color);
+    font-size: 0.9rem;
+}
+
+.company {
+    font-weight: 600;
+    font-style: italic;
+    color: var(--light-text);
+    margin-bottom: 0.75rem;
+}
+
+.job-details {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.job-details li {
+    position: relative;
+    padding-left: 1.25rem;
+    margin-bottom: 0.5rem;
+    font-size: 0.95rem;
+}
+
+.job-details li::before {
+    content: "•";
+    color: var(--accent-color);
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+}
+
+.project-item {
+    margin-bottom: 1.5rem;
+}
+
+.project-item h3 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+/* Responsive & Print */
+@media screen and (max-width: 768px) {
+    .cv-container {
+        grid-template-columns: 1fr;
+        margin: 0;
+    }
+
+    .sidebar {
+        text-align: center;
+    }
+
+    .sidebar-section h3 {
+        justify-content: center;
+    }
+
+    .main-content {
+        padding: 2rem;
+    }
+}
+
+@media print {
+    body {
+        background-color: white;
+    }
+
+    .cv-container {
+        box-shadow: none;
+        margin: 0;
+        max-width: 100%;
+    }
+
+    .sidebar {
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+}
