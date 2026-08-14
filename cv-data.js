@@ -1,9 +1,9 @@
 const cvData = {
     "personal": {
         "name": "İbrahim AKÇAY",
-        "title": "DevOps Engineer | Site Reliability Engineer (SRE) | Linux Sistem Yöneticisi",
+        "title": "DevOps Engineer | Site Reliability Engineer (SRE) | Linux & Windows Sistem Yöneticisi",
         "image": "resim.jpg",
-        "summary": "15+ yıl deneyimli DevOps / SRE ve Linux Sistem Yöneticisi. Linux & Cloud altyapıları, Kubernetes & Rancher, Docker, CI/CD (Azure DevOps), Terraform ile altyapının kod olarak yönetimi (IaC), Prometheus & Grafana tabanlı monitoring/APM ve konteyner & mikroservis mimarileri konusunda uzman. Kurumsal ortamlarda yüksek erişilebilir, ölçeklenebilir ve güvenlik odaklı sistemler tasarlayıp yönetir; DevOps kültürünü sıfırdan kurma, ISO 27001 ve PCI-DSS uyum süreçlerinde deneyimli. İşi yalnızca çalıştıran değil, sürdürülebilir ve otomatize hale getiren çözüm odaklı bir yaklaşımı benimser."
+        "summary": "15+ yıl deneyimli DevOps / SRE ve Linux & Windows Sistem Yöneticisi. Linux & Cloud altyapıları, Kubernetes & Rancher, Docker, CI/CD (Azure DevOps), Terraform ile altyapının kod olarak yönetimi (IaC), Prometheus & Grafana tabanlı monitoring/APM ve konteyner & mikroservis mimarileri konusunda uzman. Kurumsal ortamlarda yüksek erişilebilir, ölçeklenebilir ve güvenlik odaklı sistemler tasarlayıp yönetir; DevOps kültürünü sıfırdan kurma, ISO 27001 ve PCI-DSS uyum süreçlerinde deneyimli. İşi yalnızca çalıştıran değil, sürdürülebilir ve otomatize hale getiren çözüm odaklı bir yaklaşımı benimser."
     },
     "contact": [
         {
@@ -11,12 +11,6 @@ const cvData = {
             "value": "İstanbul, Türkiye",
             "link": "#",
             "icon": "fas fa-map-marker-alt"
-        },
-        {
-            "type": "phone",
-            "value": "0544 763 92 75",
-            "link": "tel:+905447639275",
-            "icon": "fas fa-phone"
         },
         {
             "type": "email",
@@ -90,7 +84,7 @@ const cvData = {
         },
         {
             "category": "Versiyon Kontrol",
-            "items": ["Git", "GitHub", "GitLab", "Azure Repos"]
+            "items": ["Git", "GitHub", "GitLab", "Bitbucket", "Azure Repos"]
         }
     ],
     "languages": [
@@ -206,6 +200,7 @@ const cvData = {
         }
     ],
     "certificates": [
+        "CEH (Certified Ethical Hacker) Eğitimi (2026)",
         "ITIL Foundation (2015)",
         "Networkakademi – Sistem ve Ağ Uzmanlığı Eğitim Programı, 240 saat (2012)"
     ]
