@@ -78,7 +78,7 @@ const cvData = {
         {
             "category": "Ağ & Güvenlik",
             "icon": "fas fa-shield-alt",
-            "items": ["FortiGate", "FortiAnalyzer", "pfSense", "Mikrotik", "Nginx (Load Balancer)", "Cloudflare", "DNS/DHCP", "LDAP (389)", "ISO 27001", "PCI-DSS", "SIEM / DLP", "Kali Linux"]
+            "items": ["FortiGate", "FortiAnalyzer", "pfSense", "Mikrotik", "Nginx (Load Balancer)", "Cloudflare", "DNS/DHCP", "LDAP (389)", "ISO 27001", "PCI-DSS", "SIEM", "DLP", "Kali Linux"]
         },
         {
             "category": "Sanallaştırma",
