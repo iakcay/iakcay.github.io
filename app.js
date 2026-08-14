@@ -53,7 +53,7 @@ function renderCV() {
     if (cvData.skillsCategorized) {
         skillsGrid.innerHTML = cvData.skillsCategorized.map(cat => `
             <div class="skill-category">
-                <h4>${cat.category}</h4>
+                <h4><i class="${cat.icon || 'fas fa-check-circle'}"></i> ${cat.category}</h4>
                 <div class="skills-list">
                     ${cat.items.map(skill => `<span>${skill}</span>`).join('')}
                 </div>

@@ -52,38 +52,47 @@ const cvData = {
     "skillsCategorized": [
         {
             "category": "Konteyner & Orkestrasyon",
-            "items": ["Docker", "Kubernetes", "Rancher", "Docker Swarm", "Harbor", "Helm"]
+            "icon": "fas fa-cubes",
+            "items": ["Docker", "Kubernetes", "Rancher", "Docker Swarm", "Harbor", "Helm", "Docker Registry"]
         },
         {
             "category": "CI/CD & Otomasyon",
-            "items": ["Azure DevOps", "GitLab CI", "SonarQube", "Terraform", "Vagrant", "Puppet", "Shell Script", "Python"]
+            "icon": "fas fa-sync-alt",
+            "items": ["Azure DevOps (TFS)", "GitLab CI", "Jenkins", "SonarQube", "Terraform", "Vagrant", "Puppet", "Shell Script", "Python", "Locust"]
         },
         {
-            "category": "Cloud",
-            "items": ["Google Cloud", "IBM Cloud"]
+            "category": "Cloud & Altyapı",
+            "icon": "fas fa-cloud",
+            "items": ["AWS", "Google Cloud", "IBM Cloud (Softlayer, Bare Metal)"]
         },
         {
             "category": "Monitoring & Logging",
-            "items": ["Prometheus", "Grafana", "Loki", "Tempo", "Zabbix", "New Relic", "ELK", "Graylog", "PagerDuty"]
+            "icon": "fas fa-chart-line",
+            "items": ["Prometheus", "Grafana", "Loki", "Tempo", "Zabbix", "New Relic", "ELK (Elasticsearch, Logstash, Kibana)", "Graylog", "PagerDuty"]
         },
         {
             "category": "Veritabanı & Storage",
-            "items": ["MongoDB", "PostgreSQL", "Redis", "MinIO", "NetApp", "Veeam Backup"]
+            "icon": "fas fa-database",
+            "items": ["MongoDB (Cluster)", "PostgreSQL (Replication)", "MySQL", "MS SQL", "Redis", "Memcached", "MinIO", "NetApp", "HP 3PAR", "StoreOnce", "Veeam Backup"]
         },
         {
             "category": "Ağ & Güvenlik",
-            "items": ["FortiGate", "pfSense", "Nginx", "Cloudflare", "DNS/DHCP", "LDAP", "ISO 27001", "PCI-DSS"]
+            "icon": "fas fa-shield-alt",
+            "items": ["FortiGate", "FortiAnalyzer", "pfSense", "Mikrotik", "Nginx (Load Balancer)", "Cloudflare", "DNS/DHCP", "LDAP (389)", "ISO 27001", "PCI-DSS", "SIEM / DLP", "Kali Linux"]
         },
         {
             "category": "Sanallaştırma",
-            "items": ["VMware vSphere", "Citrix XenServer", "vCenter"]
+            "icon": "fas fa-network-wired",
+            "items": ["VMware vSphere / ESX", "vCenter", "Citrix XenServer", "P2V / V2P"]
         },
         {
-            "category": "İşletim Sistemleri",
-            "items": ["Linux (RedHat, CentOS, Ubuntu)", "Windows Server"]
+            "category": "İşletim Sistemleri & Kurumsal",
+            "icon": "fab fa-linux",
+            "items": ["Linux (RedHat, CentOS, Ubuntu)", "Windows Server (2003-2016)", "Active Directory", "Exchange", "WSUS", "IIS"]
         },
         {
             "category": "Versiyon Kontrol",
+            "icon": "fas fa-code-branch",
             "items": ["Git", "GitHub", "GitLab", "Bitbucket", "Azure Repos"]
         }
     ],
