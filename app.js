@@ -4,15 +4,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
 function renderCV() {
     // Personal Info
-    document.getElementById('profile-pic').src = cvData.personal.image;
+    document.getElementById('profile-pic').src = cvData.personal.image || 'resim.jpg';
+    
+    // Fallback if image doesn't exist to prevent broken image icon in dark mode
+    document.getElementById('profile-pic').onerror = function() {
+        this.style.display = 'none';
+        this.parentElement.style.background = 'linear-gradient(135deg, #00ffcc, #3b82f6)';
+    };
+
     document.getElementById('name').textContent = cvData.personal.name;
     document.getElementById('title').textContent = cvData.personal.title;
-
-    // Hero Section - Removed from HTML, removing from JS to prevent crash
-    // if (document.getElementById('hero-name')) {
-    //    document.getElementById('hero-name').textContent = `Merhaba, Ben ${cvData.personal.name.split(' ')[0]}`;
-    //    document.getElementById('hero-title').textContent = cvData.personal.title;
-    // }
 
     // Summary
     document.getElementById('summary-text').textContent = cvData.personal.summary;
@@ -20,7 +21,7 @@ function renderCV() {
     // Contact
     const contactList = document.getElementById('contact-list');
     contactList.innerHTML = cvData.contact.map(item => `
-        <li><a href="${item.link}"><i class="${item.icon}"></i> ${item.value}</a></li>
+        <li><a href="${item.link}" target="${item.link === '#' ? '_self' : '_blank'}"><i class="${item.icon}"></i> ${item.value}</a></li>
     `).join('');
 
     // Education
@@ -33,13 +34,32 @@ function renderCV() {
         </div>
     `).join('');
 
-    // Skills
-    const skillsList = document.getElementById('skills-list');
-    skillsList.innerHTML = cvData.skills.map(skill => `<span>${skill}</span>`).join('');
-
     // Languages
     const languagesList = document.getElementById('languages-list');
-    languagesList.innerHTML = cvData.languages.map(lang => `<li>${lang}</li>`).join('');
+    languagesList.innerHTML = cvData.languages.map(lang => `
+        <li><i class="fas fa-language"></i> ${lang}</li>
+    `).join('');
+    
+    // Certificates
+    const certificatesList = document.getElementById('certificates-list');
+    if (cvData.certificates) {
+        certificatesList.innerHTML = cvData.certificates.map(cert => `
+            <li><i class="fas fa-certificate"></i> ${cert}</li>
+        `).join('');
+    }
+
+    // Skills Categorized
+    const skillsGrid = document.getElementById('skills-grid');
+    if (cvData.skillsCategorized) {
+        skillsGrid.innerHTML = cvData.skillsCategorized.map(cat => `
+            <div class="skill-category">
+                <h4>${cat.category}</h4>
+                <div class="skills-list">
+                    ${cat.items.map(skill => `<span>${skill}</span>`).join('')}
+                </div>
+            </div>
+        `).join('');
+    }
 
     // Experience
     const experienceList = document.getElementById('experience-list');
@@ -58,10 +78,12 @@ function renderCV() {
 
     // Projects
     const projectsList = document.getElementById('projects-list');
-    projectsList.innerHTML = cvData.projects.map(project => `
-        <div class="project-item">
-            <h3>${project.title}</h3>
-            <p>${project.description}</p>
-        </div>
-    `).join('');
+    if (cvData.projects) {
+        projectsList.innerHTML = cvData.projects.map(project => `
+            <div class="project-item">
+                <h3>${project.title}</h3>
+                <p>${project.description}</p>
+            </div>
+        `).join('');
+    }
 }

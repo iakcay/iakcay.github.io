@@ -4,18 +4,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>İbrahim AKÇAY - DevOps & Linux Uzmanı</title>
+    <title>İbrahim AKÇAY - DevOps & SRE</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
 <body>
     <div class="cv-container">
+        
         <!-- Sidebar Section -->
-        <aside class="sidebar">
+        <aside class="sidebar glass-panel">
             <div class="profile">
                 <!-- Profile Image -->
-                <img src="" alt="Profile Picture" class="profile-pic" id="profile-pic">
+                <div class="profile-pic-container">
+                    <img src="" alt="Profile Picture" class="profile-pic" id="profile-pic">
+                </div>
 
                 <!-- Name and Title -->
                 <h1 class="name" id="name"></h1>
@@ -23,29 +26,29 @@
             </div>
 
             <div class="sidebar-section">
-                <h3><i class="fas fa-envelope"></i> İletişim</h3>
+                <h3>İletişim</h3>
                 <ul class="contact-list" id="contact-list">
                     <!-- Dynamic Content -->
                 </ul>
             </div>
 
             <div class="sidebar-section">
-                <h3><i class="fas fa-graduation-cap"></i> Eğitim</h3>
+                <h3>Eğitim</h3>
                 <div id="education-list">
                     <!-- Dynamic Content -->
                 </div>
             </div>
 
             <div class="sidebar-section">
-                <h3><i class="fas fa-code"></i> Yetenekler</h3>
-                <div class="skills-list" id="skills-list">
-                    <!-- Dynamic Content -->
-                </div>
-            </div>
-
-            <div class="sidebar-section">
-                <h3><i class="fas fa-language"></i> Diller</h3>
+                <h3>Diller</h3>
                 <ul class="language-list" id="languages-list">
+                    <!-- Dynamic Content -->
+                </ul>
+            </div>
+            
+            <div class="sidebar-section">
+                <h3>Sertifikalar</h3>
+                <ul class="cert-list" id="certificates-list">
                     <!-- Dynamic Content -->
                 </ul>
             </div>
@@ -53,26 +56,88 @@
 
         <!-- Main Content Section -->
         <main class="main-content">
-            <section class="summary">
-                <h2 class="section-title">Hakkımda</h2>
-                <p id="summary-text">
-                    <!-- Dynamic Content -->
-                </p>
-            </section>
-
-            <section class="experience">
-                <h2 class="section-title">İş Deneyimi</h2>
-                <div id="experience-list">
-                    <!-- Dynamic Content -->
+            
+            <!-- Terminal Header Block for Main Content -->
+            <div class="glass-panel" style="padding: 0;">
+                <div class="terminal-header">
+                    <div class="terminal-dots">
+                        <div class="dot red"></div>
+                        <div class="dot yellow"></div>
+                        <div class="dot green"></div>
+                    </div>
+                    <span>ibrahim@devops-sre:~/portfolio$ cat summary.txt</span>
                 </div>
-            </section>
-
-            <section class="projects">
-                <h2 class="section-title">Projeler</h2>
-                <div id="projects-list">
-                    <!-- Dynamic Content -->
+                
+                <div class="section-wrapper">
+                    <section class="summary">
+                        <h2 class="section-title"><i class="fas fa-user-astronaut"></i> Hakkımda</h2>
+                        <p id="summary-text">
+                            <!-- Dynamic Content -->
+                        </p>
+                    </section>
                 </div>
-            </section>
+            </div>
+
+            <div class="glass-panel" style="padding: 0;">
+                <div class="terminal-header">
+                    <div class="terminal-dots">
+                        <div class="dot red"></div>
+                        <div class="dot yellow"></div>
+                        <div class="dot green"></div>
+                    </div>
+                    <span>ibrahim@devops-sre:~/portfolio$ ./show-skills.sh</span>
+                </div>
+                
+                <div class="section-wrapper">
+                    <section class="skills">
+                        <h2 class="section-title"><i class="fas fa-terminal"></i> Teknik Yetkinlikler</h2>
+                        <div class="skills-grid" id="skills-grid">
+                            <!-- Dynamic Content -->
+                        </div>
+                    </section>
+                </div>
+            </div>
+
+            <div class="glass-panel" style="padding: 0;">
+                <div class="terminal-header">
+                    <div class="terminal-dots">
+                        <div class="dot red"></div>
+                        <div class="dot yellow"></div>
+                        <div class="dot green"></div>
+                    </div>
+                    <span>ibrahim@devops-sre:~/portfolio$ tail -f /var/log/experience.log</span>
+                </div>
+                
+                <div class="section-wrapper">
+                    <section class="experience">
+                        <h2 class="section-title"><i class="fas fa-server"></i> İş Deneyimi</h2>
+                        <div id="experience-list">
+                            <!-- Dynamic Content -->
+                        </div>
+                    </section>
+                </div>
+            </div>
+
+            <div class="glass-panel" style="padding: 0;">
+                <div class="terminal-header">
+                    <div class="terminal-dots">
+                        <div class="dot red"></div>
+                        <div class="dot yellow"></div>
+                        <div class="dot green"></div>
+                    </div>
+                    <span>ibrahim@devops-sre:~/portfolio$ ls -la ./projects/</span>
+                </div>
+                
+                <div class="section-wrapper">
+                    <section class="projects">
+                        <h2 class="section-title"><i class="fas fa-project-diagram"></i> Öne Çıkan Projeler</h2>
+                        <div class="projects-grid" id="projects-list">
+                            <!-- Dynamic Content -->
+                        </div>
+                    </section>
+                </div>
+            </div>
+
         </main>
     </div>
 
