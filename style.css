@@ -49,6 +49,29 @@ body {
     padding: 0;
 }
 
+.lang-switch {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 100;
+}
+
+.lang-switch a {
+    background: rgba(20, 184, 166, 0.1);
+    color: var(--text-main);
+    padding: 8px 16px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-family: var(--font-mono);
+    border: 1px solid rgba(20, 184, 166, 0.3);
+    transition: all 0.3s ease;
+}
+
+.lang-switch a:hover {
+    background: rgba(20, 184, 166, 0.3);
+}
+
 .cv-container {
     display: grid;
     grid-template-columns: 340px 1fr;
