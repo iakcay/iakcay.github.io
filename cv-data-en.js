@@ -1,7 +1,7 @@
 const cvData = {
     "personal": {
         "name": "İbrahim AKÇAY",
-        "title": "DevOps Engineer | Site Reliability Engineer (SRE) | Linux & Windows System Administrator",
+        "title": "DevOps Engineer | Linux & Windows System Administrator",
         "image": "resim.jpg",
         "summary": "15+ years experienced DevOps / SRE and Linux & Windows System Administrator. Expert in Linux & Cloud infrastructures, Kubernetes & Rancher, Docker, CI/CD (Azure DevOps), Infrastructure as Code (IaC) with Terraform, Prometheus & Grafana based monitoring/APM, and container & microservice architectures. Designs and manages highly available, scalable, and security-focused systems in enterprise environments; experienced in establishing DevOps culture from scratch, ISO 27001, and PCI-DSS compliance processes. Adopts a solution-oriented approach that not only makes things work but makes them sustainable and automated."
     },
