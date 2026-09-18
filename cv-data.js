@@ -1,9 +1,9 @@
 const cvData = {
     "personal": {
         "name": "İbrahim AKÇAY",
-        "title": "DevOps Engineer | Site Reliability Engineer (SRE) | Linux & Windows Sistem Yöneticisi",
+        "title": "DevOps Engineer | Linux & Windows Sistem Yöneticisi",
         "image": "resim.jpg",
-        "summary": "15+ yıl deneyimli DevOps / SRE ve Linux & Windows Sistem Yöneticisi. Linux & Cloud altyapıları, Kubernetes & Rancher, Docker, CI/CD (Azure DevOps), Terraform ile altyapının kod olarak yönetimi (IaC), Prometheus & Grafana tabanlı monitoring/APM ve konteyner & mikroservis mimarileri konusunda uzman. Kurumsal ortamlarda yüksek erişilebilir, ölçeklenebilir ve güvenlik odaklı sistemler tasarlayıp yönetir; DevOps kültürünü sıfırdan kurma, ISO 27001 ve PCI-DSS uyum süreçlerinde deneyimli. İşi yalnızca çalıştıran değil, sürdürülebilir ve otomatize hale getiren çözüm odaklı bir yaklaşımı benimser."
+        "summary": "15+ yıl deneyimli DevOps Engineer | Linux & Windows System Administrator. Linux & Cloud altyapıları, Kubernetes & Rancher, Docker, CI/CD (Azure DevOps), Terraform ile altyapının kod olarak yönetimi (IaC), Prometheus & Grafana tabanlı monitoring/APM ve konteyner & mikroservis mimarileri konusunda uzman. Kurumsal ortamlarda yüksek erişilebilir, ölçeklenebilir ve güvenlik odaklı sistemler tasarlayıp yönetir; DevOps kültürünü sıfırdan kurma, ISO 27001 ve PCI-DSS uyum süreçlerinde deneyimli. İşi yalnızca çalıştıran değil, sürdürülebilir ve otomatize hale getiren çözüm odaklı bir yaklaşımı benimser."
     },
     "contact": [
         {
@@ -101,7 +101,7 @@ const cvData = {
     ],
     "experience": [
         {
-            "title": "DevOps Engineer / SRE",
+            "title": "DevOps Engineer | Linux & Windows System Administrator",
             "date": "Ocak 2026 – Devam",
             "company": "EGA (bionay.com.tr)",
             "details": [
